@@ -329,21 +329,19 @@
             justify-content: center;
         }
 
-        .side-gallery { left: 0; }
+        .side-gallery.left { left: 0; }
         .side-gallery.right { right: 0; }
 
-           .side-gallery .side-track {
+        .side-gallery .side-track {
             display: flex;
             flex-direction: column;
             gap: 18px;
-            animation: scrollUp 20s linear infinite;
+            animation: scrollUp 24s linear infinite;
         }
 
-            .side-gallery.right .side-track {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-            animation: scrollDown 20s linear infinite;
+        .side-gallery.right .side-track {
+            animation-name: scrollDown;
+            animation-duration: 26s;
         }
 
         .side-gallery img {
