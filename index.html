@@ -332,7 +332,7 @@
         .side-gallery.left { left: 0; }
         .side-gallery.right { right: 0; }
 
-        .side-gallery.left .side-track {
+           .side-gallery .side-track {
             display: flex;
             flex-direction: column;
             gap: 18px;
@@ -340,12 +340,9 @@
         }
 
         .side-gallery.right .side-track {
-            display: flex;
-            flex-direction: column;
-            gap: 18px
-            animation: scrollDown 24s linear infinite;
+            animation-name: scrollDown;
+            animation-duration: 26s;
         }
-
 
         .side-gallery img {
             width: 100%;
@@ -422,14 +419,14 @@
             100% { transform: translateX(-50%); }
         }
 
-        @keyframes scrollUp {
-            0% { transform: translateY(0%); }
+            keyframes scrollUp {
+            0% { transform: translateY(0); }
             100% { transform: translateY(-50%); }
         }
 
         @keyframes scrollDown {
-            0% { transform: translateY(0%); }
-            100% { transform: translateY(-50%); }
+            0% { transform: translateY(0); }
+            100% { transform: translateY(50%); }
         }
 
         @media (max-width: 900px) {
