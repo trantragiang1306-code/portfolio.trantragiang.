@@ -22,6 +22,18 @@
             --border: #e2e8f0;
         }
 
+        <div id="chatbox">
+
+  <div id="messages"></div>
+
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Hãy hỏi tui đi!" />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
         body {
             font-family: 'DM Sans', sans-serif;
             background: var(--bg);
@@ -747,5 +759,17 @@
         });
     })();
     </script>
+    <div id="chatbox">
+
+  <div id="messages"></div>
+
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Ask AI..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
