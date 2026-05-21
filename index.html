@@ -336,12 +336,14 @@
             display: flex;
             flex-direction: column;
             gap: 18px;
-            animation: scrollUp 24s linear infinite;
+            animation: scrollUp 14s linear infinite;
         }
 
             .side-gallery.right .side-track {
-            animation-name: scrollDown;
-            animation-duration: 26s;
+            display: flex;
+            flex-directionL column;
+            gap: 18px;
+            animation: scrollDown 16s linear infinite;
         }
 
         .side-gallery img {
@@ -421,11 +423,11 @@
 
          @keyframes scrollUp {
             0% { transform: translateY(0); }
-            100% { transform: translateY(-50%); }
+            100% { transform: translateY(-100%); }
         }
 
         @keyframes scrollDown {
-            0% { transform: translateY(-50%); }
+            0% { transform: translateY(100%); }
             100% { transform: translateY(0%); }
         }
 
