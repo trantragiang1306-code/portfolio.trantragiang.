@@ -337,11 +337,18 @@
             flex-direction: column;
             gap: 18px;
             animation: scrollUp 24s linear infinite;
+            animation-play-state: paused;
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
         }
 
         .side-gallery.right .side-track {
             animation-name: scrollDown;
             animation-duration: 26s;
+            animation-play-state: paused;
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+
         }
 
         .side-gallery img {
@@ -362,13 +369,14 @@
         .book-marquee {
             overflow: hidden;
             margin-top: 18px;
-        }
 
         .books-track {
             display: flex;
             gap: 18px;
             align-items: stretch;
             animation: scrollBooks 24s linear infinite;
+            animation-play-state: paused;
+
         }
 
         .book-card {
@@ -415,18 +423,18 @@
         }
 
         @keyframes scrollBooks {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
         }
 
         @keyframes scrollUp {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-50%); }
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
         }
 
         @keyframes scrollDown {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(50%); }
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
         }
 
         @media (max-width: 900px) {
