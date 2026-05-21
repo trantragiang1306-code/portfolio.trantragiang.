@@ -340,7 +340,7 @@
         }
 
         .side-gallery.right .side-track {
-            animation-name: scrollDown;
+            animation-name: scrollUp;
             animation-duration: 26s;
         }
 
@@ -425,9 +425,9 @@
             100% { transform: translateY(-50%); }
         }
 
-        @keyframes scrollDown {
-            10% { transform: translateY(100%); }
-            100% { transform: translateY(0%); }
+        @keyframes scrollUp {
+            10% { transform: translateY(0%); }
+            100% { transform: translateY(-50%); }
         }
 
         @media (max-width: 900px) {
